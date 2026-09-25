@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050505">
+<title>404 SOCIETY — NOT FOUND</title>
+<meta name="description" content="404 Society — independent streetwear.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="noise"></div>
+<div class="topbar"><span>404 SOCIETY</span><span>NO DEFAULTS / LIMITED RUNS / INDIA</span><span>FREE SHIPPING OVER ₹1999</span></div>
+
+<header class="header" id="header">
+  <button class="icon-button mobile-only" id="menuButton" aria-label="Open menu">☰</button>
+  <a class="logo" href="#top">404<span>SOCIETY</span></a>
+  <nav>
+    <a href="#shop">SHOP</a><a href="#story">STORY</a><a href="#editorial">EDITORIAL</a>
+  </nav>
+  <div class="header-actions">
+    <button id="searchButton">SEARCH</button>
+    <button id="bagButton">BAG <b id="bagCount">0</b></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#shop">SHOP</a><a href="#story">STORY</a><a href="#editorial">EDITORIAL</a>
+</div>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="orb orb-a"></div><div class="orb orb-b"></div>
+  <div class="hero-copy">
+    <p class="kicker">DROP 01 / 2026</p>
+    <h1>NOT<br><span>FOUND.</span></h1>
+    <p>A digital-first streetwear society for people who refuse the default.</p>
+    <a class="hero-cta" href="#shop">ENTER THE DROP <span>↗</span></a>
+  </div>
+  <div class="cube" aria-hidden="true">
+    <div class="cube-face front">404</div><div class="cube-face back">404</div>
+    <div class="cube-face right">404</div><div class="cube-face left">404</div>
+    <div class="cube-face top">404</div><div class="cube-face bottom">404</div>
+  </div>
+  <div class="hero-bottom"><span>SCROLL TO EXPLORE ↓</span><span>EST. 2026</span></div>
+</section>
+
+<section class="marquee"><div>404 SOCIETY • NO DEFAULTS • HARD CUTS • LIMITED RUNS • 404 SOCIETY • NO DEFAULTS • HARD CUTS • LIMITED RUNS •</div></section>
+
+<section class="story" id="story">
+  <div class="section-number">01</div>
+  <div><p class="kicker">THE SOCIETY</p><h2>WEAR THE<br>ERROR.</h2></div>
+  <p>404 Society is built around oversized silhouettes, sharp graphics and a deliberately digital visual language. Products are managed in Shopify and rendered here live — no duplicate catalog to maintain.</p>
+</section>
+
+<section class="editorial" id="editorial">
+  <div class="editorial-main"><div class="editorial-art art-one"><span>404</span></div><div class="editorial-caption"><small>01 / SIGNAL</small><strong>THE NEW<br>UNIFORM</strong></div></div>
+  <div class="editorial-side"><div class="editorial-art art-two"><span>404</span></div><div class="editorial-caption"><small>02 / FORM</small><strong>OVERSIZED<br>ESSENTIALS</strong></div></div>
+  <div class="editorial-side"><div class="editorial-art art-three"><span>404</span></div><div class="editorial-caption"><small>03 / NIGHT</small><strong>AFTER<br>DARK</strong></div></div>
+</section>
+
+<section class="shop" id="shop">
+  <div class="shop-head">
+    <div><p class="kicker">SHOPIFY LIVE CATALOG</p><h2>THE CURRENT DROP</h2></div>
+    <div class="filters" id="filters">
+      <button class="active" data-filter="All">ALL</button>
+      <button data-filter="T-Shirts">T-SHIRTS</button>
+      <button data-filter="Hoodies">HOODIES</button>
+      <button data-filter="Sweatshirts">SWEATSHIRTS</button>
+    </div>
+  </div>
+  <div class="status-line"><span id="catalogStatus">CONNECTING TO SHOPIFY…</span><button id="reloadProducts">RELOAD</button></div>
+  <div class="product-grid" id="productGrid"></div>
+  <button class="load-more" id="loadMore" hidden>LOAD MORE</button>
+</section>
+
+<section class="manifesto">
+  <div class="manifesto-3d"><div class="ring"></div><div class="manifesto-404">404</div></div>
+  <div><p class="kicker">MANIFESTO</p><p>Not everything needs to be loud. The cut, the weight, the detail — that's the statement.</p><a href="#shop">SHOP 404 SOCIETY ↗</a></div>
+</section>
+</main>
+
+<footer><div class="footer-logo">404<span>SOCIETY</span></div><div class="footer-links"><a href="#shop">SHOP</a><a href="#story">ABOUT</a><a href="#">SHIPPING</a><a href="#">RETURNS</a></div><small>© 2026 404 SOCIETY — MADE FOR THE MISFITS.</small></footer>
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="drawer" id="bagDrawer">
+  <div class="drawer-head"><b>YOUR BAG</b><button class="close" data-close>×</button></div>
+  <div class="drawer-body" id="cartItems"></div>
+  <div class="drawer-foot"><div class="total"><span>TOTAL</span><b id="cartTotal">₹0</b></div><small>Final amount is verified server-side against Shopify before payment.</small><button class="checkout-button" id="checkoutButton">CHECKOUT WITH CASHFREE</button></div>
+</aside>
+
+<div class="modal" id="checkoutModal">
+  <div class="modal-card">
+    <div class="modal-head"><div><p class="kicker">SECURE CHECKOUT</p><h3>DELIVERY DETAILS</h3></div><button class="close" data-close>×</button></div>
+    <form id="checkoutForm">
+      <div class="field-grid two"><label>FULL NAME<input name="name" required autocomplete="name"></label><label>EMAIL<input name="email" type="email" required autocomplete="email"></label></div>
+      <div class="field-grid two"><label>MOBILE<input name="phone" inputmode="numeric" maxlength="10" required autocomplete="tel"></label><label>PINCODE<input name="pincode" inputmode="numeric" maxlength="6" required autocomplete="postal-code"></label></div>
+      <label>ADDRESS<textarea name="address" rows="3" required autocomplete="street-address"></textarea></label>
+      <div class="field-grid two"><label>CITY<input name="city" required autocomplete="address-level2"></label><label>STATE<input name="state" required autocomplete="address-level1"></label></div>
+      <div class="checkout-summary"><span>ORDER TOTAL</span><b id="checkoutTotal">₹0</b></div>
+      <p class="checkout-error" id="checkoutError"></p>
+      <button class="checkout-button" id="payButton" type="submit">CONTINUE TO CASHFREE</button>
+      <small>Payment is processed by Cashfree. Your card/UPI details are never stored by this website.</small>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="productModal"><div class="product-modal-card"><button class="close" data-close>×</button><div id="productDetail"></div></div></div>
+<div class="search-modal" id="searchModal"><button class="close" data-close>×</button><input id="searchInput" type="search" placeholder="SEARCH THE SOCIETY"><p>SEARCHES THE LIVE SHOPIFY CATALOG</p></div>
+<div class="toast" id="toast"></div>
+
+<script src="https://sdk.cashfree.com/js/v3/cashfree.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>

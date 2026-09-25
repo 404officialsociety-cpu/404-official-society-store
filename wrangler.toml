@@ -1,11 +1,11 @@
-
-name = '404-official-society-store'
+name = "404-official-society-store"
 main = "src/worker.js"
-compatibility_date = "2026-09-23"
+compatibility_date = "2026-09-25"
 
 [assets]
 directory = "./public"
 binding = "ASSETS"
+not_found_handling = "single-page-application"
 
 [observability]
 enabled = true
